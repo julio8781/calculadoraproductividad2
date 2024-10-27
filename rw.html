@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Productividad - Picking</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Productividad</h1>
+        <h2>R RW</h2>
+        <form id="productivityForm">
+            <label for="hoursWorked">Horas Trabajadas:</label>
+            <input type="number" id="hoursWorked" name="hoursWorked" required>
+            <label for="minutesWorked">Minutos Trabajados:</label>
+            <input type="number" id="minutesWorked" name="minutesWorked" required>
+            <label for="linesOfCode">Líneas de pedios:</label>
+            <input type="number" id="linesOfCode" name="linesOfCode" required>
+            <button type="submit">Calcular</button>
+            <button onclick="location.href='index.html'">inicio</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    
+    <label for="startTime">Hora de Inicio:</label>
+<input type="time" id="startTime" name="startTime" required>
+<label for="endTime">Hora de Fin:</label>
+<input type="time" id="endTime" name="endTime" required>
+<!-- Botón para calcular horas trabajadas -->
+<button type="button" id="calculateHoursButton">Calcular horas trabajadas</button>
+
+<!-- Muestra el tiempo calculado -->
+<p id="hoursResult"></p>
+
+    <footer>J.Alvarez M</footer>
+    <script src="/rwScript.js"></script>
+</body>
+</html>
